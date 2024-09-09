@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script
+      src="https://kit.fontawesome.com/91347933d0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>I am Web Developer</p>
+          <h1>Hi, I am <span>Dhiraj</span> <br />Rochwani</h1>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------about------------------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG_20230404_222724_576.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As an ambitious and motivated web developer, I have embarked on a focused journey to create responsive, user-centric websites. With a solid foundation in HTML, CSS, and JavaScript, I’ve quickly picked up essential skills in React and Node.js, which I’ve applied to build functional and visually appealing projects. Though I’m at the beginning of my career, my enthusiasm for coding and my quick learning abilities set me apart. I am committed to continuous improvement and eager to bring fresh ideas and a strong work ethic to a team where I can contribute and grow. My proactive approach to learning and my passion for web development make me an ideal candidate for a company looking to invest in a developer with high potential
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><div class="skillcontainer"><div class="skillitem"><span><i style="color: #c95d2e; font-size: 2.0em;" class='bx bxl-html5'></i></span><div class="skill-hundred html"><span></span></div>90%</div></div></li>
+                <li>
+                  <div class="skillcontainer"><div class="skillitem"><span><i style="color: #147bbc; font-size: 2.0em;" class='bx bxl-css3'></i></span><div class="skill-hundred css"><span></span></div>85%</div></div>
+                </li>
+                <li>
+                  <div class="skillcontainer"><div class="skillitem"><span><i style="color: #c32ec9; font-size: 2.0em;" class='bx bxl-python'></i></span><div class="skill-hundred python"><span></span></div>90%</div>
+                </li>
+                <li>
+                  <div class="skillcontainer"><div class="skillitem"><span><i style="color: #AEB2D5; font-size: 2.0em;" class='bx bxl-php'></i></span>
+                    <div class="skill-hundred php">
+                      <span></span>
+                    </div>50%</div>
+                </li>
+                <li>
+                  <div class="skillcontainer"><div class="skillitem"><span><i style="color: #b0bc1e; font-size: 2.0em;" class='bx bxl-javascript'></i></span><div class="skill-hundred javascript"><span></span></div>75%</div>
+                </li>
+                <li>
+                  <div class="skillcontainer"><div class="skillitem"><span><i style="color: #20aa76; font-size: 2.0em;"; class='bx bxl-django'></i></span><div class="skill-hundred django"><span></span></div>90%</div>
+                </li>
+                <li>
+                  <div class="skillcontainer"><div class="skillitem"><span><i style="color: #20aa76; font-size: 2.0em;"; class='bx bxl-wordpress'></i></span><div class="skill-hundred wordpress"><span></span></div>70%</div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024-Current</span><br /></li>
+                <li><span></span><br />WEB DEVELOPER at APOYOMEDIA</li>
+                <li>
+                  <span></span><br />
+                </li>
+              </ul>
+              <ul>
+                <li><span>Feb-2024 to May-2024</span><br /></li>
+                <li><span></span><br />DJANGO INTERN AT WEBMYNE</li>
+                <li>
+                  <span></span><br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>HSC</span><br />Vidhya Mandir Vidhyalaya vadodara</li><span></span><br />
+                <li><span>Bachelor's of Commerce</span><br />The Maharaja Sayajirao University</li><span></span><br />
+                <li>
+                  <span>Masters of Computer Application(MCA)</span><br />Parul University
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- --------------------------Skill----------------------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+
+      <div class="about-col">
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2024-Current</span><br /></li>
+            <li><span></span><br />WEB DEVELOPER at APOYOMEDIA</li>
+            <li>
+              <span></span><br />
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>HSC</span><br />Vidhya Mandir Vidhyalaya vadodara</li>
+            <li><span>Bachelor's of Commerce</span><br />The Maharaja Sayajirao University</li>
+            <li>
+              <span>Masters of Computer Application(MCA)</span><br />Parul University
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- ----------------------------services----------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Developer</h2>
+              <p>
+                I developed a cutting-edge e-commerce website with an AI chatbot, using HTML, CSS, JavaScript, and Python. This project showcases my ability to create seamless, user-friendly platforms that drive customer engagement. I’m ready to bring my skills and innovative approach to a dynamic team, where I can make an immediate impact.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-python"></i>
+              <h2>Python Developer</h2>
+              <p>I developed a Jarvis Desktop Assistant, designed to streamline tasks and enhance user productivity through voice commands and intelligent automation. This project highlights my expertise in integrating advanced features into desktop applications, showcasing my ability to create intuitive and efficient tools that simplify everyday tasks.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="bx bxl-wordpress"></i>
+              <h2>WordPress</h2>
+              <p>
+                I developed the Demfac Investment Ltd website using WordPress, creating a professional and user-friendly platform that effectively showcases their services. This project demonstrates my ability to deliver high-quality websites that meet client needs and enhance their online presence.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------portfoilio------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="wrok-list">
+          <div class="work">
+            <img src="personal-portfolio-img/images/work-1.png" />
+            <div class="layer">
+              <h3>E-commerce Website</h3>
+              <p>
+                
+              </p>
+              <a href="https://fashion-corner.netlify.app/"target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="personal-portfolio-img/images/work-2.png" target="_blank"/>
+            <div class="layer">
+              <h3>Demfac Website</h3>
+              <p>
+                
+              </p>
+              <a href="https://demfacinvestmentltd.com/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="personal-portfolio-img/images/work-3.png" />
+            <div class="layer">
+              <h3>Walia Media</h3>
+              <p>
+                Currently working 
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- ---------------contact----------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              ><a href="mailto:dhirajrochwani543@gmail.com"
+                >dhirajrochwani543@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-square-phone"></i
+              ><a href="tel:8511833721"> 8511833721</a>
+            </p>
+            <div class="social-icons">
+              
+              <a href="https://www.linkedin.com/in/dhiraj-rochwani-746080203/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/dhiraj_rochwani/?next=%2F&hl=en"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/+918511833721"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+            <a
+              href="personal-portfolio-img/images/Dhiraj Rochwani Resume.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name/ Company name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your E-mail"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                minlength="50"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Dhiraj &copy; 2022 All <i class="fas fa-heart"></i> Design by Dhiraj
+          Rochwani
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzvTvbxnTU_RXKiOTduFz2nPMZ31qLDn2YwjTB7NN5tPrNmL4t0IZjHo-qY_dMqeQI/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Succesfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
